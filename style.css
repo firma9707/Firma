@@ -15,14 +15,44 @@ body {
     margin: 0;
 }
 .header-image {
-    position: relative;
+    position: relative; /* 이 컨테이너 내의 절대 위치 지정 요소를 기준으로 함 */
     width: 100%;
     height: 615px; /* 원하는 높이로 설정 */
-    background-image: url('main-picture.jpg');
+    background-color: #ffbe82;
     background-size: cover;
     background-position: center;
     margin: 0;
 }
+
+.first-banner1 {
+    position: absolute; /* 첫 번째 이미지를 기준점으로 설정 */
+    z-index: 3;
+    top: 15%; 
+    right: 20%; 
+    width: 250px; /* 너비를 지정 */
+    height: auto; /* 높이를 자동으로 조정 */     
+    border-radius: 10%;
+}
+
+.first-banner2 {
+    position: absolute; /* 첫 번째 이미지에 대해 절대 위치 지정 */
+    top: 50%; /* 첫 번째 이미지의 상단에서 20px 아래 */
+    right: 27%; /* 첫 번째 이미지의 왼쪽에서 20px 오른쪽 */
+    width: 250px; /* 너비를 지정 */
+    height: auto; /* 높이를 자동으로 조정 */
+    z-index: 2; /* 첫 번째 이미지 위로 오게 함 */
+    border-radius: 10%;
+}
+.first-banner3{
+    position: absolute; /* 첫 번째 이미지에 대해 절대 위치 지정 */
+    top: 50%; /* 첫 번째 이미지의 상단에서 20px 아래 */
+    right: 10%; /* 첫 번째 이미지의 왼쪽에서 20px 오른쪽 */
+    width: 250px; /* 너비를 지정 */
+    height: auto; /* 높이를 자동으로 조정 */
+    z-index: 1; /* 첫 번째 이미지 위로 오게 함 */
+    border-radius: 10%;
+}
+
 .overlay-text1 {
     position: absolute;
     top: 80%; 
@@ -48,7 +78,7 @@ body {
     bottom: 0;
     width: 100%;
     opacity: 0; 
-    transition: opacity 4s; 
+    transition: opacity 4s;
 }
 .info-container {
     margin-top: 10px;
@@ -56,7 +86,6 @@ body {
     margin: auto;
     background-color: #616161; /* 배경색 */
     border: none; /* 테두리 제거 */
-    width: 100%; /* 컨테이너의 너비를 전체로 설정 */
     text-align: left; /* 텍스트를 중앙 정렬 */
     display: hidden;
 }
