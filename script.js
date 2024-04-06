@@ -62,7 +62,6 @@ function toggleInlineContent(contentId) {
     if (currentVisibleContentId && currentVisibleContentId !== contentId) {
         document.getElementById(currentVisibleContentId).classList.add('hidden');
     }
-
     // 클릭한 정보창의 표시 상태를 토글합니다.
     var contentToShow = document.getElementById(contentId);
     if (contentToShow.classList.contains('hidden')) {
@@ -73,3 +72,30 @@ function toggleInlineContent(contentId) {
         currentVisibleContentId = null; // 정보창이 닫히면 추적 중인 ID를 초기화합니다.
     }
 }
+
+//슬라이드를 만드는 시작
+$(document).ready(function(){
+    var index = 0;
+    var slides = $('.slide');
+    var slideCount = slides.length;
+
+function showSlide(n) {
+      slides.css('transform', 'translateX(' + (-100 * n) + '%)');
+        index = n;
+}
+
+$('.prev').click(function() {
+    index = (index - 1 + slideCount) % slideCount;
+    showSlide(index);
+});
+$('.next').click(function() {
+    index = (index + 1) % slideCount;
+    showSlide(index);
+});
+    // 자동 슬라이드 기능 - 3초마다 실행
+setInterval(function() {
+    index = (index + 1) % slideCount;
+    showSlide(index);
+    }, 5000);
+});
+//슬라이드를 만드는 끝
