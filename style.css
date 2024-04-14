@@ -96,15 +96,14 @@ body {
 /* 2번영역 */
 .main-content {
     background-color: #ffffff;
-    padding: 0px;
+    padding: 10px;
     text-align: right;
-
 }
 .main-content-image {
     position: relative;
     width: 100%;
-    height: 615px; 
-    background-image: url('second-div.jpg');
+    height: auto; 
+    background-image: url();
     background-size: cover;
     background-position: center;
     opacity: 0; 
@@ -361,3 +360,51 @@ button:hover {
 }
 
 /* 관련 쇼핑몰의 연결 버튼 종료*/
+
+/* 상품영역 시작 */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 200px; /* You can adjust the width as needed */
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    font-size: 0.9rem;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    color: #E44D26; /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.product-discount {
+    color: #4CAF50; /* Adjust color as needed */
+}
+
+
+/* 상품영역 종료 */
