@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Korean Fishing Shop</title>
+    <link rel="stylesheet" href="Fishingstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alk+Angular&family=Estonia&family=Rosarivo:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 1번영역 메인 컨텐츠 -->
+    <div class="header">
+        <div class="header-image">
+            <h1 class="overlay-text1">釣りショップ</h1>
+        </div>
+    </div>
+    <!-- 2번영역 메인 컨텐츠 설명-->
+    <div class="info2" id="second-Banner">
+        <div class="container">
+            <button onclick="toggleInlineContent('content1')">낚시대</button>
+            <button onclick="toggleInlineContent('content2')">낚시릴</button>
+            <button onclick="toggleInlineContent('content3')">낚시줄</button>
+            <button onclick="toggleInlineContent('content4')">낚시바늘</button>
+            <button onclick="toggleInlineContent('content5')">그외 용품</button>
+        </div>
+    </div>
+    <div class="info-container">
+        <div id="content1" class="hidden info-content">
+            <h2>낚시대 가이드</h2>
+            <p>낚시대는 낚시의 핵심 장비로, 섬세함과 힘이 조화를 이룬 도구입니다.
+            종류에 따라 강도와 유연성이 다양해, 대상 물고기와 낚시 환경에 맞춰 선택할 수 있습니다.
+            텔레스코픽 낚시대는 휴대가 간편하며, 플라이 낚시대는 정교한 미끼 제어가 가능합니다.카본으로 제작된 낚시대는 가볍고 강한 텐션을 자랑하며, 초보자부터 전문가까지 모든 낚시꾼에게 필수적인 아이템입니다. 
+            선택한 낚시대가 낚시 경험의 질을 크게 좌우하기 때문에, 구매 시에는 사용 목적을 신중히 고려해야 합니다.</p>
+        </div>
+        <div id="content2" class="hidden info-content">
+            <h2>낚시릴 가이드</h2>
+            <p>낚시대는 낚시의 핵심 장비로, 섬세함과 힘이 조화를 이룬 도구입니다.
+            종류에 따라 강도와 유연성이 다양해, 대상 물고기와 낚시 환경에 맞춰 선택할 수 있습니다.
+            텔레스코픽 낚시대는 휴대가 간편하며, 플라이 낚시대는 정교한 미끼 제어가 가능합니다.카본으로 제작된 낚시대는 가볍고 강한 텐션을 자랑하며, 초보자부터 전문가까지 모든 낚시꾼에게 필수적인 아이템입니다. 
+            선택한 낚시대가 낚시 경험의 질을 크게 좌우하기 때문에, 구매 시에는 사용 목적을 신중히 고려해야 합니다.</p>
+        </div>
+        <div id="content3" class="hidden info-content">
+            <h2>낚시줄 가이드</h2>
+            <p>낚시대는 낚시의 핵심 장비로, 섬세함과 힘이 조화를 이룬 도구입니다.
+            종류에 따라 강도와 유연성이 다양해, 대상 물고기와 낚시 환경에 맞춰 선택할 수 있습니다.
+            텔레스코픽 낚시대는 휴대가 간편하며, 플라이 낚시대는 정교한 미끼 제어가 가능합니다.카본으로 제작된 낚시대는 가볍고 강한 텐션을 자랑하며, 초보자부터 전문가까지 모든 낚시꾼에게 필수적인 아이템입니다. 
+            선택한 낚시대가 낚시 경험의 질을 크게 좌우하기 때문에, 구매 시에는 사용 목적을 신중히 고려해야 합니다.</p>
+        </div>
+        <div id="content4" class="hidden info-content">
+            <h2>낚시바늘 가이드</h2>
+            <p>낚시대는 낚시의 핵심 장비로, 섬세함과 힘이 조화를 이룬 도구입니다.
+            종류에 따라 강도와 유연성이 다양해, 대상 물고기와 낚시 환경에 맞춰 선택할 수 있습니다.
+            텔레스코픽 낚시대는 휴대가 간편하며, 플라이 낚시대는 정교한 미끼 제어가 가능합니다.카본으로 제작된 낚시대는 가볍고 강한 텐션을 자랑하며, 초보자부터 전문가까지 모든 낚시꾼에게 필수적인 아이템입니다. 
+            선택한 낚시대가 낚시 경험의 질을 크게 좌우하기 때문에, 구매 시에는 사용 목적을 신중히 고려해야 합니다.</p>
+        </div>
+        <div id="content5" class="hidden info-content">
+            <h2>그외용품</h2>
+            <p>낚시대는 낚시의 핵심 장비로, 섬세함과 힘이 조화를 이룬 도구입니다.
+            종류에 따라 강도와 유연성이 다양해, 대상 물고기와 낚시 환경에 맞춰 선택할 수 있습니다.
+            텔레스코픽 낚시대는 휴대가 간편하며, 플라이 낚시대는 정교한 미끼 제어가 가능합니다.카본으로 제작된 낚시대는 가볍고 강한 텐션을 자랑하며, 초보자부터 전문가까지 모든 낚시꾼에게 필수적인 아이템입니다. 
+            선택한 낚시대가 낚시 경험의 질을 크게 좌우하기 때문에, 구매 시에는 사용 목적을 신중히 고려해야 합니다.</p>
+        </div>
+    </div>
+    <!-- 2번영역 메인 컨텐츠 -->
+    <div class="main-content">
+        <div class="main-content-image" id="fadeImage1">
+
+            <!-- 2번영역 상품 영역 -->
+            <!-- 상품을 가로 및 세로로 나열하는 기준은 div를 어디에 넣는가에 있다. -->
+            <div class="product-grid">
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품0.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0/상품0.html">23 세도나 스피닝릴</a>                        
+                        <div class="product-price">Price 30000₩</div>
+                        <div class="product-discount">Discount 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품1.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품1.html">우라노 DLC</a>  
+                        <div class="product-price">Price 30000₩</div>
+                        <div class="product-discount">Discount 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품2.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">세미플로트 모노라인</a>
+                        <div class="product-price">Price 30000₩</div>
+                        <div class="product-discount">Discount 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품3.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">광선글라스 알누스A1</a>
+                        <div class="product-price">Price 30000₩</div>
+                        <div class="product-discount">Discount 30%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품4.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">백드롭 베이트릴 100LH (2.5호)</a>
+                        <div class="product-price">4900円</div>
+                        <div class="product-discount">Discount 30%</div>                    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품5.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">볼락 스페셜 루어낚시대</a>
+                        <div class="product-price">14400円</div>
+                        <div class="product-discount">Discount 20%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품6.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">130P 루어대 보관 낚시가방</a>
+                        <div class="product-price">10400円</div>
+                        <div class="product-discount">Discount 15%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품7.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">트라이캠프 낚시 텐트</a>
+                        <div class="product-price">56000円</div>
+                        <div class="product-discount">Discount 10%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품8.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">크레타 외수질 게임</a>
+                        <div class="product-price">15300円</div>
+                        <div class="product-discount">Discount 10%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품9.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">마탄자 크레타 민어 낚시대</a>
+                        <div class="product-price">15300円</div>
+                        <div class="product-discount">Discount 12%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품10.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">마탄자 외줄낚시대</a>
+                        <div class="product-price">12000円</div>
+                        <div class="product-discount">Discount 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="낚시 페이지 소스/상품11.png" alt="Product Image">
+                    <div class="product-info">
+                        <a href="서브 낚시 페이지 소스/상품0.html">타작 월야 루어낚시대 210cm </a>
+                        <div class="product-price">Price 3133円</div>
+                        <div class="product-discount">Discount 2%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            
+            <!-- 2번영역 상품 영역 종료 -->
+
+        </div>
+    </div>
+
+    <!-- 3번 영역 삭제함 -->
+
+    <!-- 4번 영역 -->
+    <div class="relate-website">
+        <div class="icon-wrapper">
+            <!-- 각 사각형에 해당하는 div를 클릭 가능한 링크로 만듭니다. -->
+            <a href="https://www.first-website.com" target="_blank" class="icon"></a>
+            <a href="https://www.second-website.com" target="_blank" class="icon"></a>
+            <a href="https://www.third-website.com" target="_blank" class="icon"></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>전화번호 : 090-3427-1551 
+        주소 : 오사카부 서울</p>
+        <p>그 외에 개인 정보 사항 
+        주식 회사 KANAAN</p>
+        <p>© 주식 회사 KANAAN. 모든 권리 보유.</p>
+    </div>
+    <script src="Fishingscript.js"></script>
+</body>
+</html>
