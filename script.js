@@ -4,9 +4,9 @@ var infoData = {
         <div class="info-section">
             <h2 class="info-title">Korean Shop</h2>
             <ul class="info-list">
-                <li class="info-item"><span class="info-emphasis">귀사는 한국의 여러제품들을 판매하고 있습니다.</span></li>
-                <li class="info-item"><span class="info-highlight">다양성을 추구하며, 고객의 모든 필요를 충족시키기 위해 1000개가 넘는 고품질의 상품을 제공합니다</span></li>
-                <li class="info-item"><span class="info-emphasis">궁금하신 부분이 있으실 경우 연락 주시기 바랍니다.</span></li>
+                <li class="info-item"><span class="info-emphasis">御社は韓国の様々な製品を販売しています。</span></li>
+                <li class="info-item"><span class="info-highlight">多様性を追求し、お客様のあらゆるニーズに応えるために、1000以上の高品質な商品を提供しています。</span></li>
+                <li class="info-item"><span class="info-emphasis">ご不明な点がございましたら、ご連絡ください。(080-8495-2082)</span></li>
             </ul>
         </div>
     `,
@@ -14,19 +14,19 @@ var infoData = {
         <div class="info-section">
             <h2 class="info-title">シンシン釣り</h2>
             <ul class="info-list">
-                <li class="info-item">업력: <span class="info-emphasis">1980년대에 설립되어 업계를 선도하는 혁신과 전통의 조화로 30년 이상의 업력을 자랑합니다.</span></li>
-                <li class="info-item">상품 종류: <span class="info-highlight">다양성을 추구하며, 고객의 모든 필요를 충족시키기 위해 1000개가 넘는 고품질의 상품을 제공합니다</span></li>
-                <li class="info-item">본사: <span class="info-emphasis">한국의 경상남도 부산에 본사를 두고 전 세계로 뻗어가는 글로벌 낚시용품 기업입니다.</span></li>
+                <li class="info-item">業歴: <span class="info-emphasis">1980年代に設立され、業界をリードする革新と伝統の調和で30年以上の実績を誇ります。</span></li>
+                <li class="info-item">送品集類: <span class="info-highlight">多様性を追求し、お客様のあらゆるニーズに応えるために、1000以上の高品質な商品を提供しています。</span></li>
+                <li class="info-item">本社: <span class="info-emphasis">韓国の慶尚南道釜山に本社を置き、世界中に展開するグローバルな釣り用品企業です。</span></li>
             </ul>
         </div>
     `,
-    '韓国コスメ': `
+    '韓国雑貨': `
         <div class="info-section">
-            <h2 class="info-title">韓国コスメ</h2>
+            <h2 class="info-title">韓国雑貨</h2>
             <ul class="info-list">
-                <li class="info-item">업력: <span class="info-emphasis">세계적으로 인정받는 혁신적인 K-뷰티 제품들을 판매하며 꾸준히 성장해온 한국 화장품 회사입니다.</span></li>
-                <li class="info-item">상품 종류: <span class="info-highlight">다양성을 추구하며, 고객의 모든 다양한 필요를 충족시키기 위해 여러 상품을 제공합니다</span></li>
-                <li class="info-item">본사: <span class="info-emphasis">천연 성분을 사용한 스킨케어에서 시작하여 메이크업,건강보조 식품 제품에 이르기까지 다양한 라인업을 자랑합니다.</span></li>
+                <li class="info-item">業歴: <span class="info-emphasis">世界的に認められる革新的なK-雑貨製品を販売し、着実に成長してきた韓国の化粧品会社です。</span></li>
+                <li class="info-item">送品集類: <span class="info-highlight">多様性を追求し、お客様のすべての多様なニーズを満たすために、様々な商品を提供しています。</span></li>
+                <li class="info-item">本社: <span class="info-emphasis">天然成分を使用した掃除用品から始まり、キッチン用品、生活家電製品、K-ドラマ関連商品、韓国のお菓子、衣類に至るまで、様々な雑貨を販売しています。pan></li>
             </ul>
         </div>
     `,
@@ -34,9 +34,9 @@ var infoData = {
         <div class="info-section">
             <h2 class="info-title">本社</h2>
             <ul class="info-list">
-                <li class="info-item">본사: <span class="info-emphasis">나의 회사는 일본에 본사를 두고 있으며 앞으로 한국과 관련된 물건들을 일본에 판매할 예정입니다.</span></li>
-                <li class="info-item">비전: <span class="info-highlight">우리는 한일 양국 간의 문화적 가교가 되어 양국의 우호적 관계 증진에 기여하고자 합니다.</span></li>
-                <li class="info-item">고객 만족: <span class="info-emphasis">고객에게 최상의 제품과 서비스를 제공하여 한국의 우수한 제품을 일본 시장에 성공적으로 정착시키는 것을 목표로 합니다.</span></li>
+                <li class="info-item">本社: <span class="info-emphasis">私の会社は日本に本社を置いており、今後韓国に関連する商品を日本で販売する予定です。</span></li>
+                <li class="info-item">ビジョン: <span class="info-highlight">弊社が販売する韓国製品は、日本国内で韓国文化を愛する方々のために販売しており、両国の友好関係に良い影響を与えることを願っています。</span></li>
+                <li class="info-item">カスタマー満足: <span class="info-emphasis">また、お客様に最高の製品とサービスを提供し、韓国の優れた製品を日本市場に成功裏に定着させることを目指しています。</span></li>
             </ul>
         </div>
     `,
@@ -71,3 +71,4 @@ document.getElementById('myButton3').addEventListener('click', function() {
 });
 
 // 관련웹사이트 해당 주소로 이동 종료
+
