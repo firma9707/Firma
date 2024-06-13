@@ -79,7 +79,7 @@ a {
     position: absolute; 
     top: 10%; 
     left: 70%; 
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     /* 트랜스은 해당 화면의 중심위치를 원래 페이지의 중앙에서 다른 위치로 이동시키는 기능이다 */
     width: 80%; 
 }
