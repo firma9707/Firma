@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanscjkr.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif;
+}
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 700px;  
+        flex-direction: column; 
+    }
+}
+
+.box {
+    width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .box {
+        width: 100%;  
+    }
+}
+
+#box1 {
+    background-color: #a9a9a9;
+    height: 100px;
+}
+#box1 p {
+    position: relative;  
+    left: 60px;
+    font-weight: 700;
+    font-size: large;
+}
+#box2 {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    align-items: center;
+}
+
+#box3 {
+    background-color: #c2c2c2;
+    height: 130px;
+    font-size: 12px;
+}
+#box3 p {
+    position: relative;  
+    left: 30px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 상품 박스 시작 */
+.item-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 23%; /* 4개씩 정렬하기 위해 약간 작게 설정 */
+    text-align: center;
+}
+
+.item-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.item-box h3 {
+    margin: 15px 0 10px;
+    font-size: 15px;
+}
+
+.item-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media screen and (max-width: 500px) {
+    .item-box {
+        width: 80px;  /* 너비를 더 줄임 */
+        height: 120px; /* 높이를 더 줄임 */
+    }
+
+    .item-box h3 {
+        font-size: 11px;  /* 제목의 폰트 크기를 더 줄임 */
+    }
+
+    .item-box p {
+        font-size: 10px;  /* 설명의 폰트 크기를 더 줄임 */
+    }
+
+}
+/* 상품 박스 종료 */
