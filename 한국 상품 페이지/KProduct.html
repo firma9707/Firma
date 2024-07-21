@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Korean Fishing Shop</title>
+    <link rel="stylesheet" href="KProduct.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alk+Angular&family=Estonia&family=Rosarivo:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 1번영역 메인 컨텐츠 -->
+    <div class="header">
+        <div class="header-image">
+            <h1 class="overlay-text1">（株）KANAAN 韓国商品</h1>
+        </div>
+    </div>
+    <!-- 2번영역 메인 컨텐츠 설명-->
+    <div class="info2" id="second-Banner">
+        <div class="container">
+            <button onclick="toggleInlineContent('content1')">商品の種類</button>
+            <button onclick="toggleInlineContent('content2')">商品の交換</button>
+            <button onclick="toggleInlineContent('content3')">本社</button>
+            <button onclick="toggleInlineContent('content4')">配送料</button>
+            <button onclick="toggleInlineContent('content5')">その他</button>
+        </div>
+    </div>
+    <div class="info-container">
+        <div id="content1" class="hidden info-content">
+            <h2>商品の種類</h2>
+            <p>私たちは代表的な商品写真のほかにも様々な商品を取り扱っており、ご注文時に特定の商品をご希望の場合は、お電話でお問い合わせください。</p>
+        </div>
+        <div id="content2" class="hidden info-content">
+            <h2>商品の交換</h2>
+            <p>商品到着後、その日内に返金リクエストを行わない場合は、返金ができません。</p>
+
+        </div>
+        <div id="content3" class="hidden info-content">
+            <h2>本社</h2>
+            <p>現在はオンラインでの販売を行っていますが、将来的にはオフラインでの販売も予定しています。</p>
+        </div>
+        <div id="content4" class="hidden info-content">
+            <h2>配送料</h2>
+            <p>配送料は距離に応じて異なります。</p>
+
+        </div>
+        <div id="content5" class="hidden info-content">
+            <h2>お問い合わせ</h2>
+            <p>会社の電話及び携帯電話でお願いします。</p>
+
+        </div>
+    </div>
+    <!-- 2번영역 메인 컨텐츠 -->
+    <div class="main-content">
+        <div class="main-content-image" id="fadeImage1">
+
+            <!-- 2번영역 상품 영역 -->
+            <!-- 상품을 가로 및 세로로 나열하는 기준은 div를 어디에 넣는가에 있다. -->
+            <div class="product-grid">
+                <div class="product">
+                    <img src="상품 페이지 사진/상품0.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>ミニ扇風機(一個)</a>                        
+                        <div class="product-price">税込1200円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품1.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>KPOPカップホルダー(30個)</a>  
+                        <div class="product-price">税込3000円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품2.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>BTS写真(一セット)</a>
+                        <div class="product-price">税込1400円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품3.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>シンちゃん靴下(10個)</a>
+                        <div class="product-price">税込2000円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="상품 페이지 사진/상품4.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>オシャレスカーフ(一個)</a>
+                        <div class="product-price">税込1200円</div>
+                        <div class="product-discount">割引 30%</div>                    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품5.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>韓国美容骨盤運動器</a>
+                        <div class="product-price">税込8000円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품6.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>ジャガイモラーメン(5個)</a>
+                        <div class="product-price">税込650円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품7.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>韓国水飴（料理用、1.5K）</a>
+                        <div class="product-price">税込1100円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="상품 페이지 사진/상품8.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>へチャンドル　コ゚チュウジャン1KG</a>
+                        <div class="product-price">税込2000円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품9.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>ピューレ梨ジュース【10個】</a>
+                        <div class="product-price">税込800円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품10.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>ロッテコンソメひげ茶【10個】</a>
+                        <div class="product-price">税込2500円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="상품 페이지 사진/상품11.png" alt="Product Image">
+                    <div class="product-info">
+                        <a>韓国甘酒【シッケ、10個】</a>
+                        <div class="product-price">税込1500円</div>
+                        <div class="product-discount">割引 30%</div>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each product (가로와 세로는 이 문장이 힌트이다)-->
+            </div>
+            
+            <!-- 2번영역 상품 영역 종료 -->
+
+        </div>
+    </div>
+
+    <!-- 3번 영역 삭제함 -->
+
+    <!-- 4번 영역 -->
+    <div class="relate-website">
+        <div class="icon-wrapper">
+            <!-- 각 사각형에 해당하는 div를 클릭 가능한 링크로 만듭니다. -->
+            <a href="상품 페이지 사진/amazon-icon.png" target="_blank" class="icon"><img src="상품 페이지 사진/amazon-icon.png" alt="Amazon Icon"></a>
+            <a href="상품 페이지 사진/qoo10-icon.png" target="_blank" class="icon"><img src="상품 페이지 사진/qoo10-icon.png" alt="Qoo10 Icon"></a>
+            <a href="상품 페이지 사진/yahoojp-icon.png" target="_blank" class="icon"><img src="상품 페이지 사진/yahoojp-icon.png" alt="Yahoo Japan Icon"></a>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>電話番号 : 080-8495-2082 </p>
+            住所 : 大阪府大阪市生野区鶴橋2丁目4－3</p>
+            <p>（株）KANAAN</p>
+            <p>© 株式会社 KANAANがすべての権利を持っています.</p>
+
+            
+    </div>
+    <script src="KProduct.js"></script>
+</body>
+</html>
